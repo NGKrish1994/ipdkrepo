@@ -1,0 +1,913 @@
+
+ghcr.io/ipdk-io/ipdk-ubuntu2004-x86_64:sha-05ee9c0 (ubuntu 20.04)
+=================================================================
+Total: 246 (UNKNOWN: 0, LOW: 86, MEDIUM: 151, HIGH: 9, CRITICAL: 0)
+
+┌───────────────────────────┬──────────────────┬──────────┬──────────┬──────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│          Library          │  Vulnerability   │ Severity │  Status  │    Installed Version     │ Fixed Version │                            Title                             │
+├───────────────────────────┼──────────────────┼──────────┼──────────┼──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ binutils                  │ CVE-2020-19726   │ MEDIUM   │ affected │ 2.34-6ubuntu1.6          │               │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-46174   │          │          │                          │               │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
+│                           │                  │          │          │                          │               │ objdump                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35205   │          │          │                          │               │ reachable assertion in display_debug_names() in dwarf.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35206   │          │          │                          │               │ NULL pointer dereference in read_and_display_attr_value() in │
+│                           │                  │          │          │                          │               │ dwarf.c                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44840   │          │          │                          │               │ heap-based buffer overflow in find_section_in_set() in       │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45703   │          │          │                          │               │ heap-based buffer overflow in display_debug_section() in     │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45703                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47007   │          │          │                          │               │ memory leak in stab_demangle_v3_arg() in stabs.c             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47007                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47008   │          │          │                          │               │ memory leak in make_tempdir() and make_tempname() in         │
+│                           │                  │          │          │                          │               │ bucomm.c                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47008                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47010   │          │          │                          │               │ memory leak in pr_function_type() in prdbg.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47010                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47011   │          │          │                          │               │ memory leak in parse_stab_struct_fields() in stabs.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47011                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47695   │          │          │                          │               │ uninitialized field in bfd_mach_o_get_synthetic_symtab() in  │
+│                           │                  │          │          │                          │               │ match-o.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47695                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48063   │          │          │                          │               │ excessive memory consumption in load_separate_debug_files()  │
+│                           │                  │          │          │                          │               │ in dwarf.c                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48063                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48065   │          │          │                          │               │ memory leak in find_abstract_instance() in dwarf2.c          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48065                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13716   │ LOW      │          │                          │               │ binutils: Memory leak with the C++ symbol demangler routine  │
+│                           │                  │          │          │                          │               │ in libiberty                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13716                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-20657   │          │          │                          │               │ libiberty: Memory leak in demangle_template function         │
+│                           │                  │          │          │                          │               │ resulting in a denial of service...                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-20657                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-1010204 │          │          │                          │               │ Improper Input Validation, Signed/Unsigned Comparison,       │
+│                           │                  │          │          │                          │               │ Out-of-bounds Read in gold/fileread.cc and                   │
+│                           │                  │          │          │                          │               │ elfcpp/elfcpp_file.h leads...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-1010204                 │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48064   │          │          │                          │               │ excessive memory consumption in                              │
+│                           │                  │          │          │                          │               │ _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48064                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ binutils-common           │ CVE-2020-19726   │ MEDIUM   │          │                          │               │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-46174   │          │          │                          │               │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
+│                           │                  │          │          │                          │               │ objdump                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35205   │          │          │                          │               │ reachable assertion in display_debug_names() in dwarf.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35206   │          │          │                          │               │ NULL pointer dereference in read_and_display_attr_value() in │
+│                           │                  │          │          │                          │               │ dwarf.c                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44840   │          │          │                          │               │ heap-based buffer overflow in find_section_in_set() in       │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45703   │          │          │                          │               │ heap-based buffer overflow in display_debug_section() in     │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45703                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47007   │          │          │                          │               │ memory leak in stab_demangle_v3_arg() in stabs.c             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47007                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47008   │          │          │                          │               │ memory leak in make_tempdir() and make_tempname() in         │
+│                           │                  │          │          │                          │               │ bucomm.c                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47008                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47010   │          │          │                          │               │ memory leak in pr_function_type() in prdbg.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47010                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47011   │          │          │                          │               │ memory leak in parse_stab_struct_fields() in stabs.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47011                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47695   │          │          │                          │               │ uninitialized field in bfd_mach_o_get_synthetic_symtab() in  │
+│                           │                  │          │          │                          │               │ match-o.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47695                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48063   │          │          │                          │               │ excessive memory consumption in load_separate_debug_files()  │
+│                           │                  │          │          │                          │               │ in dwarf.c                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48063                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48065   │          │          │                          │               │ memory leak in find_abstract_instance() in dwarf2.c          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48065                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13716   │ LOW      │          │                          │               │ binutils: Memory leak with the C++ symbol demangler routine  │
+│                           │                  │          │          │                          │               │ in libiberty                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13716                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-20657   │          │          │                          │               │ libiberty: Memory leak in demangle_template function         │
+│                           │                  │          │          │                          │               │ resulting in a denial of service...                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-20657                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-1010204 │          │          │                          │               │ Improper Input Validation, Signed/Unsigned Comparison,       │
+│                           │                  │          │          │                          │               │ Out-of-bounds Read in gold/fileread.cc and                   │
+│                           │                  │          │          │                          │               │ elfcpp/elfcpp_file.h leads...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-1010204                 │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48064   │          │          │                          │               │ excessive memory consumption in                              │
+│                           │                  │          │          │                          │               │ _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48064                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ binutils-x86-64-linux-gnu │ CVE-2020-19726   │ MEDIUM   │          │                          │               │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-46174   │          │          │                          │               │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
+│                           │                  │          │          │                          │               │ objdump                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35205   │          │          │                          │               │ reachable assertion in display_debug_names() in dwarf.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35206   │          │          │                          │               │ NULL pointer dereference in read_and_display_attr_value() in │
+│                           │                  │          │          │                          │               │ dwarf.c                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44840   │          │          │                          │               │ heap-based buffer overflow in find_section_in_set() in       │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45703   │          │          │                          │               │ heap-based buffer overflow in display_debug_section() in     │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45703                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47007   │          │          │                          │               │ memory leak in stab_demangle_v3_arg() in stabs.c             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47007                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47008   │          │          │                          │               │ memory leak in make_tempdir() and make_tempname() in         │
+│                           │                  │          │          │                          │               │ bucomm.c                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47008                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47010   │          │          │                          │               │ memory leak in pr_function_type() in prdbg.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47010                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47011   │          │          │                          │               │ memory leak in parse_stab_struct_fields() in stabs.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47011                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47695   │          │          │                          │               │ uninitialized field in bfd_mach_o_get_synthetic_symtab() in  │
+│                           │                  │          │          │                          │               │ match-o.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47695                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48063   │          │          │                          │               │ excessive memory consumption in load_separate_debug_files()  │
+│                           │                  │          │          │                          │               │ in dwarf.c                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48063                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48065   │          │          │                          │               │ memory leak in find_abstract_instance() in dwarf2.c          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48065                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13716   │ LOW      │          │                          │               │ binutils: Memory leak with the C++ symbol demangler routine  │
+│                           │                  │          │          │                          │               │ in libiberty                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13716                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-20657   │          │          │                          │               │ libiberty: Memory leak in demangle_template function         │
+│                           │                  │          │          │                          │               │ resulting in a denial of service...                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-20657                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-1010204 │          │          │                          │               │ Improper Input Validation, Signed/Unsigned Comparison,       │
+│                           │                  │          │          │                          │               │ Out-of-bounds Read in gold/fileread.cc and                   │
+│                           │                  │          │          │                          │               │ elfcpp/elfcpp_file.h leads...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-1010204                 │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48064   │          │          │                          │               │ excessive memory consumption in                              │
+│                           │                  │          │          │                          │               │ _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48064                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ coreutils                 │ CVE-2016-2781    │          │          │ 8.30-3ubuntu2            │               │ coreutils: Non-privileged session can escape to the parent   │
+│                           │                  │          │          │                          │               │ session in chroot                                            │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2016-2781                    │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ cpp                       │ CVE-2020-13844   │ MEDIUM   │          │ 4:9.3.0-1ubuntu2         │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+├───────────────────────────┤                  │          │          │                          ├───────────────┤                                                              │
+│ gcc                       │                  │          │          │                          │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+├───────────────────────────┤                  │          │          ├──────────────────────────┼───────────────┤                                                              │
+│ gcc-7-base                │                  │          │          │ 7.5.0-6ubuntu2           │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12886   │ LOW      │          │                          │               │ gcc: spilling of stack protection address in cfgexpand.c and │
+│                           │                  │          │          │                          │               │ function.c leads to...                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12886                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gcc-8-base                │ CVE-2020-13844   │ MEDIUM   │          │ 8.4.0-3ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgv                      │ CVE-2022-3219    │ LOW      │          │ 2.2.19-3ubuntu2.2        │               │ denial of service issue (resource consumption) using         │
+│                           │                  │          │          │                          │               │ compressed packets                                           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libasan4                  │ CVE-2020-13844   │ MEDIUM   │          │ 7.5.0-6ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12886   │ LOW      │          │                          │               │ gcc: spilling of stack protection address in cfgexpand.c and │
+│                           │                  │          │          │                          │               │ function.c leads to...                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12886                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libbinutils               │ CVE-2020-19726   │ MEDIUM   │          │ 2.34-6ubuntu1.6          │               │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-46174   │          │          │                          │               │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
+│                           │                  │          │          │                          │               │ objdump                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35205   │          │          │                          │               │ reachable assertion in display_debug_names() in dwarf.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35206   │          │          │                          │               │ NULL pointer dereference in read_and_display_attr_value() in │
+│                           │                  │          │          │                          │               │ dwarf.c                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44840   │          │          │                          │               │ heap-based buffer overflow in find_section_in_set() in       │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45703   │          │          │                          │               │ heap-based buffer overflow in display_debug_section() in     │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45703                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47007   │          │          │                          │               │ memory leak in stab_demangle_v3_arg() in stabs.c             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47007                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47008   │          │          │                          │               │ memory leak in make_tempdir() and make_tempname() in         │
+│                           │                  │          │          │                          │               │ bucomm.c                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47008                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47010   │          │          │                          │               │ memory leak in pr_function_type() in prdbg.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47010                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47011   │          │          │                          │               │ memory leak in parse_stab_struct_fields() in stabs.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47011                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47695   │          │          │                          │               │ uninitialized field in bfd_mach_o_get_synthetic_symtab() in  │
+│                           │                  │          │          │                          │               │ match-o.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47695                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48063   │          │          │                          │               │ excessive memory consumption in load_separate_debug_files()  │
+│                           │                  │          │          │                          │               │ in dwarf.c                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48063                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48065   │          │          │                          │               │ memory leak in find_abstract_instance() in dwarf2.c          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48065                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13716   │ LOW      │          │                          │               │ binutils: Memory leak with the C++ symbol demangler routine  │
+│                           │                  │          │          │                          │               │ in libiberty                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13716                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-20657   │          │          │                          │               │ libiberty: Memory leak in demangle_template function         │
+│                           │                  │          │          │                          │               │ resulting in a denial of service...                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-20657                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-1010204 │          │          │                          │               │ Improper Input Validation, Signed/Unsigned Comparison,       │
+│                           │                  │          │          │                          │               │ Out-of-bounds Read in gold/fileread.cc and                   │
+│                           │                  │          │          │                          │               │ elfcpp/elfcpp_file.h leads...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-1010204                 │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48064   │          │          │                          │               │ excessive memory consumption in                              │
+│                           │                  │          │          │                          │               │ _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48064                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc-bin                  │ CVE-2023-5156    │ MEDIUM   │          │ 2.31-0ubuntu9.9          │               │ DoS due to memory leak in getaddrinfo.c                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2016-20013   │ LOW      │          │                          │               │ sha256crypt and sha512crypt through 0.6 allow attackers to   │
+│                           │                  │          │          │                          │               │ cause a denial of...                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2016-20013                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc-dev-bin              │ CVE-2023-5156    │ MEDIUM   │          │ 2.31-0ubuntu9.12         │               │ DoS due to memory leak in getaddrinfo.c                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2016-20013   │ LOW      │          │                          │               │ sha256crypt and sha512crypt through 0.6 allow attackers to   │
+│                           │                  │          │          │                          │               │ cause a denial of...                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2016-20013                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc6                     │ CVE-2023-5156    │ MEDIUM   │          │                          │               │ DoS due to memory leak in getaddrinfo.c                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2016-20013   │ LOW      │          │                          │               │ sha256crypt and sha512crypt through 0.6 allow attackers to   │
+│                           │                  │          │          │                          │               │ cause a denial of...                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2016-20013                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc6-dev                 │ CVE-2023-5156    │ MEDIUM   │          │                          │               │ DoS due to memory leak in getaddrinfo.c                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2016-20013   │ LOW      │          │                          │               │ sha256crypt and sha512crypt through 0.6 allow attackers to   │
+│                           │                  │          │          │                          │               │ cause a denial of...                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2016-20013                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libcilkrts5               │ CVE-2020-13844   │ MEDIUM   │          │ 7.5.0-6ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12886   │ LOW      │          │                          │               │ gcc: spilling of stack protection address in cfgexpand.c and │
+│                           │                  │          │          │                          │               │ function.c leads to...                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12886                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libctf-nobfd0             │ CVE-2020-19726   │ MEDIUM   │          │ 2.34-6ubuntu1.6          │               │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-46174   │          │          │                          │               │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
+│                           │                  │          │          │                          │               │ objdump                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35205   │          │          │                          │               │ reachable assertion in display_debug_names() in dwarf.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35206   │          │          │                          │               │ NULL pointer dereference in read_and_display_attr_value() in │
+│                           │                  │          │          │                          │               │ dwarf.c                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44840   │          │          │                          │               │ heap-based buffer overflow in find_section_in_set() in       │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45703   │          │          │                          │               │ heap-based buffer overflow in display_debug_section() in     │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45703                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47007   │          │          │                          │               │ memory leak in stab_demangle_v3_arg() in stabs.c             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47007                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47008   │          │          │                          │               │ memory leak in make_tempdir() and make_tempname() in         │
+│                           │                  │          │          │                          │               │ bucomm.c                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47008                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47010   │          │          │                          │               │ memory leak in pr_function_type() in prdbg.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47010                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47011   │          │          │                          │               │ memory leak in parse_stab_struct_fields() in stabs.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47011                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47695   │          │          │                          │               │ uninitialized field in bfd_mach_o_get_synthetic_symtab() in  │
+│                           │                  │          │          │                          │               │ match-o.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47695                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48063   │          │          │                          │               │ excessive memory consumption in load_separate_debug_files()  │
+│                           │                  │          │          │                          │               │ in dwarf.c                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48063                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48065   │          │          │                          │               │ memory leak in find_abstract_instance() in dwarf2.c          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48065                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13716   │ LOW      │          │                          │               │ binutils: Memory leak with the C++ symbol demangler routine  │
+│                           │                  │          │          │                          │               │ in libiberty                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13716                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-20657   │          │          │                          │               │ libiberty: Memory leak in demangle_template function         │
+│                           │                  │          │          │                          │               │ resulting in a denial of service...                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-20657                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-1010204 │          │          │                          │               │ Improper Input Validation, Signed/Unsigned Comparison,       │
+│                           │                  │          │          │                          │               │ Out-of-bounds Read in gold/fileread.cc and                   │
+│                           │                  │          │          │                          │               │ elfcpp/elfcpp_file.h leads...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-1010204                 │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48064   │          │          │                          │               │ excessive memory consumption in                              │
+│                           │                  │          │          │                          │               │ _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48064                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libctf0                   │ CVE-2020-19726   │ MEDIUM   │          │                          │               │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-46174   │          │          │                          │               │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
+│                           │                  │          │          │                          │               │ objdump                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35205   │          │          │                          │               │ reachable assertion in display_debug_names() in dwarf.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35206   │          │          │                          │               │ NULL pointer dereference in read_and_display_attr_value() in │
+│                           │                  │          │          │                          │               │ dwarf.c                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44840   │          │          │                          │               │ heap-based buffer overflow in find_section_in_set() in       │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45703   │          │          │                          │               │ heap-based buffer overflow in display_debug_section() in     │
+│                           │                  │          │          │                          │               │ readelf.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45703                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47007   │          │          │                          │               │ memory leak in stab_demangle_v3_arg() in stabs.c             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47007                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47008   │          │          │                          │               │ memory leak in make_tempdir() and make_tempname() in         │
+│                           │                  │          │          │                          │               │ bucomm.c                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47008                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47010   │          │          │                          │               │ memory leak in pr_function_type() in prdbg.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47010                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47011   │          │          │                          │               │ memory leak in parse_stab_struct_fields() in stabs.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47011                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47695   │          │          │                          │               │ uninitialized field in bfd_mach_o_get_synthetic_symtab() in  │
+│                           │                  │          │          │                          │               │ match-o.c                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47695                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48063   │          │          │                          │               │ excessive memory consumption in load_separate_debug_files()  │
+│                           │                  │          │          │                          │               │ in dwarf.c                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48063                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48065   │          │          │                          │               │ memory leak in find_abstract_instance() in dwarf2.c          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48065                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13716   │ LOW      │          │                          │               │ binutils: Memory leak with the C++ symbol demangler routine  │
+│                           │                  │          │          │                          │               │ in libiberty                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13716                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-20657   │          │          │                          │               │ libiberty: Memory leak in demangle_template function         │
+│                           │                  │          │          │                          │               │ resulting in a denial of service...                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-20657                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-1010204 │          │          │                          │               │ Improper Input Validation, Signed/Unsigned Comparison,       │
+│                           │                  │          │          │                          │               │ Out-of-bounds Read in gold/fileread.cc and                   │
+│                           │                  │          │          │                          │               │ elfcpp/elfcpp_file.h leads...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-1010204                 │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-48064   │          │          │                          │               │ excessive memory consumption in                              │
+│                           │                  │          │          │                          │               │ _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-48064                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcc-7-dev              │ CVE-2020-13844   │ MEDIUM   │          │ 7.5.0-6ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12886   │ LOW      │          │                          │               │ gcc: spilling of stack protection address in cfgexpand.c and │
+│                           │                  │          │          │                          │               │ function.c leads to...                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12886                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ liblzma-dev               │ CVE-2020-22916   │ MEDIUM   │          │ 5.2.4-1ubuntu1.1         │               │ Denial of service via decompression of crafted file          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-22916                   │
+├───────────────────────────┤                  │          │          │                          ├───────────────┤                                                              │
+│ liblzma5                  │                  │          │          │                          │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libmpx2                   │ CVE-2020-13844   │          │          │ 8.4.0-3ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpcre3                  │ CVE-2017-11164   │ LOW      │          │ 2:8.39-12ubuntu0.1       │               │ OP_KETRMAX feature in the match function in pcre_exec.c      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-11164                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libprocps8                │ CVE-2023-4016    │          │          │ 2:3.3.16-1ubuntu2.3      │               │ ps buffer overflow                                           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4016                    │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpython2.7-minimal      │ CVE-2021-4189    │ MEDIUM   │          │ 2.7.18-1~20.04.3         │               │ ftplib should not use the host from the PASV response        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-4189                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0391    │          │          │                          │               │ urllib.parse does not sanitize URLs containing ASCII newline │
+│                           │                  │          │          │                          │               │ and tabs                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-24329   │          │          │                          │               │ urllib.parse url blocklisting bypass                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-24329                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-27043   │          │          │                          │               │ Parsing errors in email/_parseaddr.py lead to incorrect      │
+│                           │                  │          │          │                          │               │ value in email address part...                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-27043                   │
+├───────────────────────────┼──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpython2.7-stdlib       │ CVE-2021-4189    │          │          │                          │               │ ftplib should not use the host from the PASV response        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-4189                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0391    │          │          │                          │               │ urllib.parse does not sanitize URLs containing ASCII newline │
+│                           │                  │          │          │                          │               │ and tabs                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-24329   │          │          │                          │               │ urllib.parse url blocklisting bypass                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-24329                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-27043   │          │          │                          │               │ Parsing errors in email/_parseaddr.py lead to incorrect      │
+│                           │                  │          │          │                          │               │ value in email address part...                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-27043                   │
+├───────────────────────────┤                  │          │          ├──────────────────────────┼───────────────┤                                                              │
+│ libpython3.8-minimal      │                  │          │          │ 3.8.10-0ubuntu1~20.04.8  │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-28861   │ LOW      │          │                          │               │ open redirection vulnerability in lib/http/server.py may     │
+│                           │                  │          │          │                          │               │ lead to information disclosure                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-28861                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpython3.8-stdlib       │ CVE-2023-27043   │ MEDIUM   │          │                          │               │ Parsing errors in email/_parseaddr.py lead to incorrect      │
+│                           │                  │          │          │                          │               │ value in email address part...                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-27043                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-28861   │ LOW      │          │                          │               │ open redirection vulnerability in lib/http/server.py may     │
+│                           │                  │          │          │                          │               │ lead to information disclosure                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-28861                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libssl1.1                 │ CVE-2023-3446    │          │          │ 1.1.1f-1ubuntu2.19       │               │ Excessive time spent checking DH keys and parameters         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-3446                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-3817    │          │          │                          │               │ Excessive time spent checking DH q parameter value           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libstdc++-7-dev           │ CVE-2020-13844   │ MEDIUM   │          │ 7.5.0-6ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12886   │ LOW      │          │                          │               │ gcc: spilling of stack protection address in cfgexpand.c and │
+│                           │                  │          │          │                          │               │ function.c leads to...                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12886                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libsystemd0               │ CVE-2023-26604   │          │          │ 245.4-4ubuntu3.22        │               │ privilege escalation via the less pager                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-26604                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libubsan0                 │ CVE-2020-13844   │ MEDIUM   │          │ 7.5.0-6ubuntu2           │               │ ARM straight-line speculation vulnerability                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-13844                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12886   │ LOW      │          │                          │               │ gcc: spilling of stack protection address in cfgexpand.c and │
+│                           │                  │          │          │                          │               │ function.c leads to...                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12886                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libudev1                  │ CVE-2023-26604   │          │          │ 245.4-4ubuntu3.22        │               │ privilege escalation via the less pager                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-26604                   │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ linux-libc-dev            │ CVE-2023-20569   │ HIGH     │          │ 5.4.0-164.181            │               │ Return Address Predictor velunerability leading to           │
+│                           │                  │          │          │                          │               │ information disclosure                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-20569                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-4244    │          │          │                          │               │ Use-after-free in nft_verdict_dump due to a race between set │
+│                           │                  │          │          │                          │               │ GC and transaction...                                        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4244                    │
+│                           ├──────────────────┤          ├──────────┤                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-42752   │          │ fixed    │                          │ 5.4.0-165.182 │ integer overflow in igmpv3_newpack leading to exploitable    │
+│                           │                  │          │          │                          │               │ memory access                                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-42752                   │
+│                           ├──────────────────┤          │          │                          │               ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-42753   │          │          │                          │               │ potential slab-out-of-bound access due to integer underflow  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-42753                   │
+│                           ├──────────────────┤          │          │                          │               ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-42755   │          │          │                          │               │ out-of-bounds read in rsvp_classify()                        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-42755                   │
+│                           ├──────────────────┤          │          │                          │               ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-42756   │          │          │                          │               │ race condition between IPSET_CMD_ADD and IPSET_CMD_SWAP      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-42756                   │
+│                           ├──────────────────┤          │          │                          │               ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-4622    │          │          │                          │               │ use after free in unix_stream_sendpage                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4622                    │
+│                           ├──────────────────┤          │          │                          │               ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-4623    │          │          │                          │               │ sch_hfsc UAF                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4623                    │
+│                           ├──────────────────┤          │          │                          │               ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-4921    │          │          │                          │               │ A use-after-free vulnerability in the Linux kernel's         │
+│                           │                  │          │          │                          │               │ net/sched: sch_qf ...                                        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4921                    │
+│                           ├──────────────────┼──────────┼──────────┤                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2013-7445    │ MEDIUM   │ affected │                          │               │ kernel: memory exhaustion via crafted Graphics Execution     │
+│                           │                  │          │          │                          │               │ Manager (GEM) objects                                        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2013-7445                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2015-8553    │          │          │                          │               │ CVE-2015-2150 CVE-2015-8553 xen: non-maskable interrupts     │
+│                           │                  │          │          │                          │               │ triggerable by guests (xsa120)                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2015-8553                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2016-8660    │          │          │                          │               │ kernel: xfs: local DoS due to a page lock order bug in...    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2016-8660                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-17977   │          │          │                          │               │ kernel: Mishandled interactions among XFRM Netlink messages, │
+│                           │                  │          │          │                          │               │ IPPROTO_AH packets, and IPPROTO_IP packets...                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-17977                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-12362   │          │          │                          │               │ Integer overflow in Intel(R) Graphics Drivers                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-12362                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-24504   │          │          │                          │               │ kernel: Uncontrolled resource consumption in some Intel(R)   │
+│                           │                  │          │          │                          │               │ Ethernet E810 Adapter drivers                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-24504                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-26144   │          │          │                          │               │ kernel: accepting unencrypted A-MSDU frames that start with  │
+│                           │                  │          │          │                          │               │ RFC1042 header                                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-26144                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-27835   │          │          │                          │               │ kernel: child process is able to access parent mm through    │
+│                           │                  │          │          │                          │               │ hfi dev...                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-27835                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-36310   │          │          │                          │               │ kernel: infinite loop in set_memory_region_test in           │
+│                           │                  │          │          │                          │               │ arch/x86/kvm/svm/svm.c for certain nested page faults...     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-36310                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3864    │          │          │                          │               │ descendant's dumpable setting with certain SUID binaries     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-3864                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-4148    │          │          │                          │               │ kernel: Improper implementation of block_invalidatepage()    │
+│                           │                  │          │          │                          │               │ allows users to crash the kernel                             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-4148                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0400    │          │          │                          │               │ Out of bounds read in the smc protocol stack                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0400                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0480    │          │          │                          │               │ memcg does not limit the number of POSIX file locks allowing │
+│                           │                  │          │          │                          │               │ memory...                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0480                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-1247    │          │          │                          │               │ A race condition bug in rose_connect()                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-1247                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-1280    │          │          │                          │               │ concurrency use-after-free between drm_setmaster_ioctl and   │
+│                           │                  │          │          │                          │               │ drm_mode_getresources                                        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-1280                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-25836   │          │          │                          │               │ Bluetooth® Low Energy Pairing in Bluetooth Core              │
+│                           │                  │          │          │                          │               │ Specification v4.0 through v5.3 may...                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-25836                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-2961    │          │          │                          │               │ race condition in rose_bind()                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-2961                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-29900   │          │          │                          │               │ RetBleed Arbitrary Speculative Code Execution with Return    │
+│                           │                  │          │          │                          │               │ Instructions                                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-29900                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3344    │          │          │                          │               │ nested shutdown interception could lead to host crash        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-3344                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3523    │          │          │                          │               │ race when faulting a device private page in memory manager   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-3523                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-36402   │          │          │                          │               │ integer overflow in vmwgfx_execbuf.c                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-36402                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-38096   │          │          │                          │               │ NULL pointer dereference in vmw_cmd_dx_define_query          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-38096                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-38457   │          │          │                          │               │ use-after-free in vmw_cmd_res_check                          │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-38457                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-39189   │          │          │                          │               │ TLB flush operations are mishandled in certain               │
+│                           │                  │          │          │                          │               │ KVM_VCPU_PREEMPTED leading to guest malfunctioning...        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-39189                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-40133   │          │          │                          │               │ use-after-free in vmw_execbuf_tie_context                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-40133                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-4543    │          │          │                          │               │ KASLR Prefetch Bypass Breaks KPTI                            │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-4543                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-0030    │          │          │                          │               │ Use after Free in nvkm_vmm_pfn_map                           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-0030                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-1582    │          │          │                          │               │ Soft lockup occurred during __page_mapcount                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-1582                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-2007    │          │          │                          │               │ DPT I2O controller TOCTOU information disclosure             │
+│                           │                  │          │          │                          │               │ vulnerability                                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-2007                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-23000   │          │          │                          │               │ kernel: incorrect return value for the error case in the     │
+│                           │                  │          │          │                          │               │ tegra_xusb_find_port_node                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-23000                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-23004   │          │          │                          │               │ kernel: incorrect check for error case in the                │
+│                           │                  │          │          │                          │               │ malidp_check_pages_threshold                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-23004                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-26242   │          │          │                          │               │ afu_mmio_region_get_by_offset in                             │
+│                           │                  │          │          │                          │               │ drivers/fpga/dfl-afu-region.c in the ...                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-26242                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-28327   │          │          │                          │               │ denial of service problem in net/unix/diag.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-28327                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-3006    │          │          │                          │               │ Add Spectre-BHB mitigation for AmpereOne                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-3006                    │
+│                           ├──────────────────┤          ├──────────┤                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-34319   │          │ fixed    │                          │ 5.4.0-165.182 │ buffer overrun in netback due to unusual packet (XSA-432)    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-34319                   │
+│                           ├──────────────────┤          ├──────────┤                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-37453   │          │ affected │                          │               │ out-of-bounds read in read_descriptors                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-37453                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-42754   │          │          │                          │               │ NULL pointer dereference in ipv4_send_dest_unreach()         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-42754                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-0537    │ LOW      │          │                          │               │ An information disclosure vulnerability in the kernel USB    │
+│                           │                  │          │          │                          │               │ gadget driver could enable...                                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-0537                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13165   │          │          │                          │               │ An elevation of privilege vulnerability in the kernel file   │
+│                           │                  │          │          │                          │               │ system. Product: Android....                                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13165                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2017-13693   │          │          │                          │               │ kernel: ACPI operand cache leak in dsutils.c                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2017-13693                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-1121    │          │          │                          │               │ procps-ng, procps: process hiding through race condition     │
+│                           │                  │          │          │                          │               │ enumerating /proc                                            │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-1121                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12928   │          │          │                          │               │ kernel: NULL pointer dereference in hfs_ext_read_extent in   │
+│                           │                  │          │          │                          │               │ hfs.ko                                                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12928                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12929   │          │          │                          │               │ kernel: use-after-free in ntfs_read_locked_inode in the      │
+│                           │                  │          │          │                          │               │ ntfs.ko                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12929                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12930   │          │          │                          │               │ kernel: stack-based out-of-bounds write in                   │
+│                           │                  │          │          │                          │               │ ntfs_end_buffer_async_read in the ntfs.ko                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12930                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2018-12931   │          │          │                          │               │ kernel: stack-based out-of-bounds write in ntfs_attr_find in │
+│                           │                  │          │          │                          │               │ the ntfs.ko                                                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2018-12931                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-14899   │          │          │                          │               │ VPN: an attacker can inject data into the TCP stream which   │
+│                           │                  │          │          │                          │               │ allows...                                                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-14899                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-15213   │          │          │                          │               │ kernel: use-after-free caused by malicious USB device in     │
+│                           │                  │          │          │                          │               │ drivers/media/usb/dvb-usb/dvb-usb-init.c                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-15213                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-19378   │          │          │                          │               │ out-of-bounds write in index_rbio_pages in fs/btrfs/raid56.c │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-19378                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-19814   │          │          │                          │               │ kernel: out-of-bounds write in __remove_dirty_segment in     │
+│                           │                  │          │          │                          │               │ fs/f2fs/segment.c                                            │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2019-19814                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-12363   │          │          │                          │               │ kernel: Improper input validation in some Intel(R) Graphics  │
+│                           │                  │          │          │                          │               │ Drivers                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-12363                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-12364   │          │          │                          │               │ kernel: Null pointer dereference in some Intel(R) Graphics   │
+│                           │                  │          │          │                          │               │ Drivers                                                      │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-12364                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-14304   │          │          │                          │               │ ethtool when reading eeprom of device could lead to memory   │
+│                           │                  │          │          │                          │               │ leak                                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-14304                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-35501   │          │          │                          │               │ audit not logging access to syscall open_by_handle_at for    │
+│                           │                  │          │          │                          │               │ users with CAP_DAC_READ_SEARCH capability...                 │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2020-35501                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-26934   │          │          │                          │               │ An issue was discovered in the Linux kernel 4.18 through     │
+│                           │                  │          │          │                          │               │ 5.10.16, as...                                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-26934                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-32078   │          │          │                          │               │ kernel: out-of-bounds read in                                │
+│                           │                  │          │          │                          │               │ arch/arm/mach-footbridge/personal-pci.c due to improper      │
+│                           │                  │          │          │                          │               │ input validation                                             │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-32078                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-34981   │          │          │                          │               │ kernel: Bluetooth CMTP Module Double Free Privilege          │
+│                           │                  │          │          │                          │               │ Escalation Vulnerability                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-34981                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-39801   │          │          │                          │               │ In ion_ioctl of ion-ioctl.c, there is a possible use after   │
+│                           │                  │          │          │                          │               │ free due...                                                  │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-39801                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44879   │          │          │                          │               │ NULL pointer dereference in folio_mark_dirty() via a crafted │
+│                           │                  │          │          │                          │               │ f2fs image                                                   │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-44879                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0854    │          │          │                          │               │ swiotlb information leak with DMA_FROM_DEVICE                │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0854                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41848   │          │          │                          │               │ Race condition between mgslpc_ioctl and mgslpc_detach        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-41848                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44034   │          │          │                          │               │ A use-after-free due to race between scr24x_open() and       │
+│                           │                  │          │          │                          │               │ scr24x_remove()                                              │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-44034                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45884   │          │          │                          │               │ use-after-free due to race condition occurring in            │
+│                           │                  │          │          │                          │               │ dvb_register_device()                                        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45884                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45885   │          │          │                          │               │ use-after-free due to race condition occurring in            │
+│                           │                  │          │          │                          │               │ dvb_frontend.c                                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-45885                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47518   │          │          │                          │               │ a heap-based buffer overflow in                              │
+│                           │                  │          │          │                          │               │ drivers/net/wireless/microchip/wilc1000/cfg80211.c           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47518                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47519   │          │          │                          │               │ an out-of-bounds write in                                    │
+│                           │                  │          │          │                          │               │ drivers/net/wireless/microchip/wilc1000/cfg80211.c           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-47519                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-1989    │          │          │                          │               │ Use after free bug in btsdio_remove due to race condition    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-1989                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-22995   │          │          │                          │               │ kernel: missing platform_device_put() and kfree() calls in   │
+│                           │                  │          │          │                          │               │ an error path in dwc3_qcom_acpi_register_core()...           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-22995                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-33288   │          │          │                          │               │ use-after-free in bq24190_remove in                          │
+│                           │                  │          │          │                          │               │ drivers/power/supply/bq24190_charger.c                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-33288                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-4133    │          │          │                          │               │ use-after-free in ch_flower_stats_cb()                       │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4133                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-4134    │          │          │                          │               │ use-after-free in cyttsp4_watchdog_work()                    │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4134                    │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ login                     │ CVE-2013-4235    │          │          │ 1:4.8.1-1ubuntu5.20.04.4 │               │ shadow-utils: TOCTOU race conditions by copying and removing │
+│                           │                  │          │          │                          │               │ directory trees                                              │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2013-4235                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-29383   │          │          │                          │               │ Improper input validation in shadow-utils package utility    │
+│                           │                  │          │          │                          │               │ chfn                                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-29383                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl                   │ CVE-2023-3446    │          │          │ 1.1.1f-1ubuntu2.19       │               │ Excessive time spent checking DH keys and parameters         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-3446                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-3817    │          │          │                          │               │ Excessive time spent checking DH q parameter value           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ passwd                    │ CVE-2013-4235    │          │          │ 1:4.8.1-1ubuntu5.20.04.4 │               │ shadow-utils: TOCTOU race conditions by copying and removing │
+│                           │                  │          │          │                          │               │ directory trees                                              │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2013-4235                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-29383   │          │          │                          │               │ Improper input validation in shadow-utils package utility    │
+│                           │                  │          │          │                          │               │ chfn                                                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-29383                   │
+├───────────────────────────┼──────────────────┤          │          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ procps                    │ CVE-2023-4016    │          │          │ 2:3.3.16-1ubuntu2.3      │               │ ps buffer overflow                                           │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-4016                    │
+├───────────────────────────┼──────────────────┼──────────┤          ├──────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python2.7                 │ CVE-2021-4189    │ MEDIUM   │          │ 2.7.18-1~20.04.3         │               │ ftplib should not use the host from the PASV response        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-4189                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0391    │          │          │                          │               │ urllib.parse does not sanitize URLs containing ASCII newline │
+│                           │                  │          │          │                          │               │ and tabs                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-24329   │          │          │                          │               │ urllib.parse url blocklisting bypass                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-24329                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-27043   │          │          │                          │               │ Parsing errors in email/_parseaddr.py lead to incorrect      │
+│                           │                  │          │          │                          │               │ value in email address part...                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-27043                   │
+├───────────────────────────┼──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ python2.7-minimal         │ CVE-2021-4189    │          │          │                          │               │ ftplib should not use the host from the PASV response        │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-4189                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-0391    │          │          │                          │               │ urllib.parse does not sanitize URLs containing ASCII newline │
+│                           │                  │          │          │                          │               │ and tabs                                                     │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-24329   │          │          │                          │               │ urllib.parse url blocklisting bypass                         │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-24329                   │
+│                           ├──────────────────┤          │          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-27043   │          │          │                          │               │ Parsing errors in email/_parseaddr.py lead to incorrect      │
+│                           │                  │          │          │                          │               │ value in email address part...                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-27043                   │
+├───────────────────────────┤                  │          │          ├──────────────────────────┼───────────────┤                                                              │
+│ python3.8                 │                  │          │          │ 3.8.10-0ubuntu1~20.04.8  │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+│                           │                  │          │          │                          │               │                                                              │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-28861   │ LOW      │          │                          │               │ open redirection vulnerability in lib/http/server.py may     │
+│                           │                  │          │          │                          │               │ lead to information disclosure                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-28861                   │
+├───────────────────────────┼──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3.8-minimal         │ CVE-2023-27043   │ MEDIUM   │          │                          │               │ Parsing errors in email/_parseaddr.py lead to incorrect      │
+│                           │                  │          │          │                          │               │ value in email address part...                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2023-27043                   │
+│                           ├──────────────────┼──────────┤          │                          ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-28861   │ LOW      │          │                          │               │ open redirection vulnerability in lib/http/server.py may     │
+│                           │                  │          │          │                          │               │ lead to information disclosure                               │
+│                           │                  │          │          │                          │               │ https://avd.aquasec.com/nvd/cve-2021-28861                   │
+└───────────────────────────┴──────────────────┴──────────┴──────────┴──────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+
+Python (python-pkg)
+===================
+Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 0, CRITICAL: 0)
+
+┌─────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│       Library       │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
+├─────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ Pygments (METADATA) │ CVE-2022-40896 │ MEDIUM   │ fixed  │ 2.12.0            │ 2.15.0        │ A ReDoS issue was discovered in pygments/lexers/smithy.py in │
+│                     │                │          │        │                   │               │ pygments ...                                                 │
+│                     │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2022-40896                   │
+├─────────────────────┼────────────────┤          │        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ ipython (METADATA)  │ CVE-2023-24816 │          │        │ 7.31.1            │ 8.10          │ IPython vulnerable to command injection via set_term_title   │
+│                     │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-24816                   │
+└─────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
